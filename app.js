@@ -11,7 +11,7 @@ darkMode.addEventListener('click',() => {
     //we need to use anime.js
     //we set up the timeline
     const timeline = anime.timeline({
-        duration : 760,
+        duration : 750,
         easing : "easeOutExpo"
     });
     // ADD DIFFERENT ANIMATIONS TO THE TIMELINE
@@ -24,16 +24,16 @@ darkMode.addEventListener('click',() => {
     .add(
         {
         targets: '#darkMode',
-        rotate: 330
+        rotate: 320
         }, 
-        "-= 370"
+        "-= 350"
     )
     .add({
         targets: "section",
         backgroundColor: toggle ? "rgb(255,255,255)": "rgb(22,22,22)",
         color: toggle ? "rgb(22,22,22)" : "rgb(255,255,255)"
     }, 
-    "-= 710"
+    "-= 700"
     );
     if(!toggle){
         toggle = true;
